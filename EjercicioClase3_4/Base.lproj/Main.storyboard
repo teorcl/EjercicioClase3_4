@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtX-ly-55R">
-                                <rect key="frame" x="114.33333333333333" y="601" width="161.66666666666669" height="49"/>
+                                <rect key="frame" x="114.33333333333333" y="505.33333333333326" width="161.66666666666669" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Siguiente">
@@ -35,9 +35,12 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CtH-S4-YQi"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mrP-t9-aGt">
-                                <rect key="frame" x="70" y="211.66666666666666" width="250" height="295.66666666666674"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="caraFeliz" translatesAutoresizingMaskIntoConstraints="NO" id="mrP-t9-aGt">
+                                <rect key="frame" x="70" y="211.66666666666663" width="250" height="200"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,7 +48,6 @@
                         <constraints>
                             <constraint firstItem="mrP-t9-aGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Vz-dU-Wsp"/>
                             <constraint firstItem="mtX-ly-55R" firstAttribute="top" secondItem="mrP-t9-aGt" secondAttribute="bottom" constant="93.666666666666515" id="6dk-yO-39K"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mtX-ly-55R" secondAttribute="bottom" constant="160" id="8Gk-xP-Xx3"/>
                             <constraint firstItem="5CA-dv-I7W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="LBM-x2-b92"/>
                             <constraint firstItem="mtX-ly-55R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZQ7-sS-Pn1"/>
                             <constraint firstItem="mrP-t9-aGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="cYS-AS-KyP"/>
@@ -54,6 +56,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mrP-t9-aGt" secondAttribute="trailing" constant="70" id="mJG-Bc-IrO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceImageView" destination="mrP-t9-aGt" id="N0y-Mb-YTH"/>
+                        <outlet property="randomNumberLabel" destination="5CA-dv-I7W" id="hef-iB-2Bs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,6 +67,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="caraFeliz" width="333.33334350585938" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
