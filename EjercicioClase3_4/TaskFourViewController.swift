@@ -20,12 +20,6 @@ class TaskFourViewController: UIViewController {
     
     var randomNumber = Const.initialNumber
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
-    
     @IBAction func nextButtonPressed(_ sender: Any) {
         play()
     }
@@ -46,8 +40,7 @@ class TaskFourViewController: UIViewController {
         }
         
     }
-    
-    
+
     func play(){
         getRandomNumer()
         selectImage()
