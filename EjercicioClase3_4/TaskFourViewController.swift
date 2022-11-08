@@ -39,7 +39,6 @@ class TaskFourViewController: UIViewController {
     }
     
     func selectImage(){
-        //selecionar la imagen dependediendo de randomNumber
         if randomNumber % 2 == 0 {
             faceImageView.image = UIImage(named: "caraTriste")
         }else{
