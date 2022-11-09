@@ -12,7 +12,6 @@ class TaskFourViewController: UIViewController {
     struct Const{
         static let initialNumber = 1
         static let finalNumber = 10
-        static let winnerNumber = 7
     }
     
     @IBOutlet weak var randomNumberLabel: UILabel!
